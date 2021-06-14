@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    background-color: #eceff1;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 460px;
+    height: auto;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    margin: 12px 0;
+}
+
+.add-element {
+    margin: 12px 0;
+}
+
+input {
+    padding: 6px 4px;
+    width: 70%;
+}
+
+input:focus {
+    background-color: #00b0ff;
+    color: #ffffff;
+}
+
+button {
+    padding: 7px 14px;
+    background-color: #00b0ff;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: #fafafa;
+}
+
+.element-list {
+    height: 550px;
+    overflow-y: auto;
+}
+
+ul {
+    padding: 15px;
+}
+
+li {
+    list-style: none;
+    padding: 10px 5px;
+    background-color: #ffffff;
+    margin: 12px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+li:hover {
+    background-color: #c0c0c0;
+}
+
+#clearTask {
+    position: absolute;
+    padding-top: 15px;
+    bottom: 15px;
+    left: 22%;
+    background-color: orangered;
+    color: #ffffff;
+    width: 250px;
+    height: 35px;
+    border: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    outline-style: none;
+}
+
+#clearTask:hover {
+    background-color: rgb(255, 94, 0);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: .2s ease-in;
+    -webkit-transition: .2s ease-in;
+    -moz-transition: .2s ease-in;
+    -ms-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+}
+
+.checked {
+    text-decoration: line-through;
+    background-color: #c0c0c0;
+}
